@@ -11,7 +11,7 @@ if (window.matchMedia("(min-width: 500px)").matches) {
     margins : 3
   });
 }
-
+// close dropdown menu when clicking outside the menu
 $(document).click(function (event) {
     var clickover = $(event.target);
     var $navbar = $(".navbar-collapse");
