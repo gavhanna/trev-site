@@ -46,6 +46,68 @@ body {
     margin: 0 auto; }
 
 #gallery {
-  margin-top: 50px; }
+  margin: 100px auto;
+  max-width: 900px; }
+
+hr {
+  max-width: 100px;
+  margin: 50px auto; }
+
+#video-gallery {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 150px; }
+
+#contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1.5rem;
+  text-align: center; }
+  #contact #info {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex; }
+    @media screen and (max-width: 500px) {
+      #contact #info {
+        background-color: transparent; } }
+    #contact #info #icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #contact #info #icon img {
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid #606060; }
+        @media screen and (max-width: 500px) {
+          #contact #info #icon img {
+            margin: 0 auto; } }
+    #contact #info h3 {
+      text-align: center; }
+    #contact #info #about {
+      max-width: 600px;
+      padding: 50px; }
+      @media screen and (max-width: 500px) {
+        #contact #info #about {
+          padding: 50px 10px;
+          text-align: center; } }
+    @media screen and (max-width: 500px) {
+      #contact #info {
+        flex-direction: column; } }
+
+#social-media-icons {
+  margin-top: 20px;
+  text-align: center; }
+  #social-media-icons i {
+    padding: 20px;
+    color: #606060;
+    font-size: 3rem; }
+    #social-media-icons i:hover {
+      color: #eee; }
 
 /*# sourceMappingURL=main.css.map */

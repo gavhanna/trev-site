@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://use.fontawesome.com/712f80daf2.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="swipebox/css/swipebox.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/justifiedGallery.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Testicles</title>
 </head>
 <body>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -33,20 +33,28 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div id="wrapper">
-    <div id="title">
-      <span>
-        <img src="https://i.vimeocdn.com/portrait/10074385_300x300.webp" alt="">
-        <!-- <div id="description">Little Wolf Media is an Irish company that brings creative people together to play with film, photography, art & music.</div> -->
-      </span>
+  <div id="video-gallery">
+    <div class="video video-one">
+      <h2>FINDAC “MAGNIFICENT 7”</h2>
+      <p>A film of 7 portraits created by urban aesthetic artist FIN DAC in Dublin, Ireland.</p>
+      <iframe src="https://player.vimeo.com/video/120977178?color=ff9933&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <!-- <hr> -->
+    <div class="video video-two">
+
     </div>
   </div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/jquery.justifiedGallery.min.js"></script>
-  <script src="jquery.swipebox.min.js"></script>
+  <script src="js/fitvids.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $("#video-gallery").fitVids();
+  });
+</script>
   <script src="js/main.js"></script>
 </body>
 </html>

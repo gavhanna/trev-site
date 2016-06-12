@@ -2,6 +2,7 @@
 
 $font-color: #606060;
 $background-color: #171719;
+$break-small: 500px;
 
 //  General Styles
 
@@ -67,8 +68,85 @@ body {
   }
 }
 
-// Gallery
+// Photos Gallery
 
 #gallery {
-  margin-top: 50px;
+  margin: 100px auto;
+
+  max-width: 900px;
+}
+
+// Videos gallery
+hr {
+  max-width: 100px;
+  margin: 50px auto;
+}
+#video-gallery {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+// Contact/About
+
+#contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1.5rem;
+  text-align: center;
+  #info  {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    @media screen and (max-width: $break-small){
+      background-color: rgba(0, 0, 0, 0);
+    }
+    #icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // margin: 0 auto;
+      img {
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid $font-color;
+        @media screen and (max-width: $break-small){
+          margin: 0 auto;
+        }
+      }
+    }
+    h3 {
+      text-align: center;
+    }
+    #about  {
+      max-width: 600px;
+      padding: 50px;
+      @media screen and (max-width: $break-small){
+        padding: 50px 10px;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: $break-small){
+      flex-direction: column;
+    }
+  }
+}
+
+#social-media-icons{
+  margin-top: 20px;
+  text-align: center;
+  i {
+    padding: 20px;
+    color: $font-color;
+    font-size: 3rem;
+    &:hover {
+      color: #eee;
+    }
+  }
 }
