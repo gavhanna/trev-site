@@ -81,7 +81,7 @@ hr {
     margin: 0 auto;
     max-width: 900px;
     display: flex; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       #contact #info {
         background-color: transparent; } }
     #contact #info #icon {
@@ -92,7 +92,7 @@ hr {
         width: 150px;
         border-radius: 50%;
         border: 1px solid #606060; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
           #contact #info #icon img {
             margin: 0 auto; } }
     #contact #info h3 {
@@ -100,11 +100,11 @@ hr {
     #contact #info #about {
       max-width: 600px;
       padding: 50px; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         #contact #info #about {
           padding: 50px 10px;
           text-align: center; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       #contact #info {
         flex-direction: column; } }
 
