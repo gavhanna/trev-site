@@ -1,0 +1,74 @@
+// Variables
+
+$font-color: #606060;
+$background-color: #171719;
+
+//  General Styles
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  min-height: calc(100vh - 150px);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #171719;
+  color: $font-color;
+  background: radial-gradient(ellipse at center, #4c4c4c 0%,#2c2c2c 0%,#131313 0%,#171719 30%,#000000 100%);
+  min-height: 100vh;
+  color: $font-color
+}
+
+
+// Navigation
+
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  background-color: rgba(0,0,0,0.7);
+  border: 0px;
+  //border-bottom: 1px solid $font-color;
+  color: $font-color;
+  .navbar-toggle {
+    background-color: $background-color;
+    border: #171719;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+.navbar-collapse {
+  border: $background-color;
+  margin: 0;
+}
+
+// Page One
+
+#title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  img {
+    border-radius: 50%;
+    border: 1px solid $font-color;
+  }
+  #description {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+// Gallery
+
+#gallery {
+  margin-top: 50px;
+}
