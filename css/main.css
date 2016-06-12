@@ -27,10 +27,18 @@ body {
     border: #171719; }
     .navbar .navbar-toggle:hover {
       color: #000; }
+  .navbar button {
+    transition: all .3s; }
 
 .navbar-collapse {
   border: #171719;
   margin: 0; }
+
+.navbar-right li a {
+  color: #606060;
+  transition: all .3s; }
+  .navbar-right li a:hover {
+    color: #aaa; }
 
 #title {
   text-align: center;
@@ -46,7 +54,7 @@ body {
     margin: 0 auto; }
 
 #gallery {
-  margin: 100px auto;
+  margin: 50px auto;
   max-width: 900px; }
 
 hr {
@@ -106,8 +114,13 @@ hr {
   #social-media-icons i {
     padding: 20px;
     color: #606060;
-    font-size: 3rem; }
+    font-size: 3rem;
+    transition: all .3s; }
     #social-media-icons i:hover {
       color: #eee; }
+
+footer {
+  text-align: center;
+  padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,7 +24,7 @@ body {
   color: $font-color;
   background: radial-gradient(ellipse at center, #4c4c4c 0%,#2c2c2c 0%,#131313 0%,#171719 30%,#000000 100%);
   min-height: 100vh;
-  color: $font-color
+  color: $font-color;
 }
 
 
@@ -44,10 +44,21 @@ body {
       color: #000;
     }
   }
+  button {
+    transition: all .3s;
+  }
 }
 .navbar-collapse {
   border: $background-color;
   margin: 0;
+}
+
+.navbar-right li a {
+  color: $font-color;
+  transition: all .3s;
+  &:hover {
+    color: #aaa;
+  }
 }
 
 // Page One
@@ -71,8 +82,7 @@ body {
 // Photos Gallery
 
 #gallery {
-  margin: 100px auto;
-
+  margin: 50px auto;
   max-width: 900px;
 }
 
@@ -145,8 +155,16 @@ hr {
     padding: 20px;
     color: $font-color;
     font-size: 3rem;
+    transition: all .3s;
     &:hover {
       color: #eee;
     }
   }
+}
+
+// Footer
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
